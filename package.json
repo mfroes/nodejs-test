@@ -7,7 +7,10 @@
     "start": "node app.js",
     "dev": "nodemon app.js",
     "bundle": "pack",
-    "test": "mocha"
+    "test": "mocha",
+    "release": "release-it",
+    "release-dr": "release-it --dry-run",
+    "release-ni": "release-it --non-interactive"
   },
   "author": "marcelo froes",
   "license": "GPL-3.0+",
@@ -20,6 +23,7 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^5.1.1",
-    "request": "^2.85.0"
+    "request": "^2.85.0",
+    "release-it": "^7.4.2"
   }
 }
