@@ -8,10 +8,6 @@ const HOST = '0.0.0.0';
 
 
 require('./routes')(app)
-//// root URL (/)
-//app.get('/', function (req, res) {
-//      res.send('Hello World')
-//})
 
 // server on port 8080
 app.listen(PORT, HOST, function () {
