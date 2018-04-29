@@ -64,7 +64,8 @@ or if you have installed npm-bundle
 npm-bundle
 ```
 
-
+## Next steps
+The idea would be migrating it to SAM ( AWS Serverless Application Model ) by using AWS Lambda functions, and integrate it with AWS CodePipeline, AWS CodeCommit, Amazon API Gateway using AWS CodeStar.
 
 ## Contributing
 
