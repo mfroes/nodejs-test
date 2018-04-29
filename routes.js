@@ -15,4 +15,23 @@ module.exports = function(app){
     res.set('System-Health', 'false').status(503).send('Fail');
   });
 
+  // metadata
+  app.get('/metadata', function (req, res) {
+    var package_json = require('./package.json');
+    require('child_process').exec('git rev-parse HEAD', function(err, stdout) {
+      var commit = stdout.replace(/\n$/, '');
+    console.log('Last commit hash on this branch is:', commit);
+      console.log(package_json);
+
+      response = {}
+      response[package_json.name] = {
+          "version": package_json.version,
+          "description": package_json.description,
+          "lastcommitsha": commit
+      }
+
+      res.status(200).send(JSON.stringify(response));
+    });
+  });
+
 }
