@@ -19,7 +19,7 @@
     "tag": true,
     "tagName": "v%s",
     "tagAnnotation": "Release %s",
-    "push": false,
+    "push": true,
     "pushArgs": "",
     "pushRepo": null,
     "beforeStartCommand": false,
@@ -34,7 +34,7 @@
     "access": null
   },
   "github": {
-    "release": false,
+    "release": true,
     "releaseName": "Release %s",
     "preRelease": false,
     "draft": false,
