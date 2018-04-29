@@ -8,9 +8,17 @@ const HOST = '0.0.0.0';
 
 
 require('./routes')(app)
+var server ;
+function start() {
+  // server on port 8080
+  server = app.listen(PORT, HOST, function () {
+        console.log('App started on port 8080!');
+  })
+}
 
-// server on port 8080
-app.listen(PORT, HOST, function () {
-      console.log('App started on port 8080!')
-})
+function stop() {
+  server.close();
+}
 
+// auto-start server
+start();
