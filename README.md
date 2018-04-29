@@ -56,13 +56,32 @@ docker-compose -f docker-compose-prod.yml
 
 ## Package
 to package the application you can run one of the following
-```
+```bash
 npm pack
 ```
 or if you have installed npm-bundle
-```
+```bash
 npm-bundle
 ```
+## Release
+if you are releasing it on github, you could use the release-it plugin
+### Interactive release
+```bash
+npm release
+```
+### Testing release
+```bash
+npm release-dr
+```
+### Automating release
+```bash
+npm release-ni
+```
+
+## TODO
+During build time generate the metadata.json file so it would not depend on the application running on a git repo
+1) create metadata-template.json template
+2) gather the information from package.json and generate the metadata file
 
 ## Next steps
 The idea would be migrating it to SAM ( AWS Serverless Application Model ) by using AWS Lambda functions, and integrate it with AWS CodePipeline, AWS CodeCommit, Amazon API Gateway using AWS CodeStar.
