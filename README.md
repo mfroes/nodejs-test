@@ -88,6 +88,7 @@ During build time generate the metadata.json file so it would not depend on the 
 2) gather the information from package.json and generate the metadata file
 
 ## Next steps
+Migrate building/testing to a gulpfile which would have more control of what is going on and bundling it with webpack which would make more sense.
 The idea would be migrating it to SAM ( AWS Serverless Application Model ) by using AWS Lambda functions, and integrate it with AWS CodePipeline, AWS CodeCommit, Amazon API Gateway using AWS CodeStar.
 
 ## Contributing
