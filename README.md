@@ -65,6 +65,10 @@ npm-bundle
 ```
 ## Release
 if you are releasing it on github, you could use the release-it plugin
+### Installation
+```bash
+npm install -g release-it
+```
 ### Interactive release
 ```bash
 npm release
