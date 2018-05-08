@@ -7,4 +7,11 @@ services:
     volumes:
       - ./:/usr/src/app
     ports:
-      - "8080"
+      - "8080:8080"
+    entrypoint: ["npm", "run", "dev"]
+  npm:
+    image: node:9.11.1-alpine
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app
+    entrypoint: ["npm", "run", "install"]

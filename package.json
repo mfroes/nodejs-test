@@ -4,6 +4,7 @@
   "description": "Test for express nodejs",
   "main": "app.js",
   "scripts": {
+    "install": "npm install",
     "start": "node app.js",
     "dev": "nodemon app.js",
     "bundle": "pack",
@@ -21,6 +22,7 @@
     "express"
   ],
   "devDependencies": {
+    "nodemon": "^1.17.4",
     "chai": "^4.1.2",
     "mocha": "^5.1.1",
     "request": "^2.85.0",
